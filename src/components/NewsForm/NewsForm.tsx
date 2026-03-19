@@ -10,11 +10,14 @@ export function NewsForm() {
     const form = e.target;
     const formData = new FormData(form as any);
 
+    // title, intro, content, authorID, 
     const titleFromForm = formData.get('title')
     const intro = formData.get('intro')
     console.log('titleFromForm', titleFromForm, 'titleFromState', title, 'intro', intro)
+    const content = "extended placeholder..."
+    const authorID = 4
 
-    const body = { title, intro }
+    const body = { title, intro, content, authorID }
 
     // setState('loading');
     const response = await createNewsItem(body);

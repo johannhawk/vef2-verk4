@@ -42,7 +42,7 @@ export function IndexPage() {
           <Link to="/frettir/foo">Foo fréttin</Link>
         </li>
         <li>
-          <Link to="/ny-frett">Ný frétt</Link>
+          <h3><Link to="/ny-frett">Ný frétt</Link></h3>
         </li>
       </ul>
     </section>
