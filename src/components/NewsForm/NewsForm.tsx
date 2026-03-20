@@ -17,7 +17,10 @@ export function NewsForm() {
     const content = "extended placeholder..."
     const authorID = 4
 
-    const body = { title, intro, content, authorID }
+    const body = { title, intro, content, authorID } //json wrapper vantar
+    //const data = JSON.parse(body.toString()) // ekkert gerist sem er verr enn ad fa villuskilabod. Verð að kommenta út.
+    //console.log(data);
+
 
     // setState('loading');
     const response = await createNewsItem(body);
